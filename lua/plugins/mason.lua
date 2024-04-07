@@ -12,7 +12,21 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "lua_ls",
-        -- add more arguments for adding more language servers
+        -- php
+        "intelephense",
+        -- go
+        "gopls",
+        -- c
+        "clangd",
+        -- tex
+        -- ltex-lsもあるが、texlabのほうが更新多めでrust製なのでtexlab採用。とはいえltex-lsもkotilin製で気になる
+        "texlab",
+        -- markdown 色々LSPはあるが一番更新が盛んなものを使用
+        "marksman",
+        -- rust
+        "rust_analyzer",
+        -- ruby
+        "ruby_ls",
       })
     end,
   },
@@ -24,8 +38,17 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "prettier",
-        "stylua",
-        -- add more arguments for adding more null-ls sources
+        -- php
+        "php-cs-fixer",
+        "phpstan",
+        -- go
+        "staticcheck",
+        -- c
+        "cpplint",
+        "clang-format",
+        -- tex
+        "vale",
+        "latexindent",
       })
     end,
   },
@@ -36,6 +59,7 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "python",
+        "php"
         -- add more arguments for adding more debuggers
       })
     end,
