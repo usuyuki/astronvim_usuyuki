@@ -7,7 +7,7 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  
+
   -- カラースキーマ
   { import = "astrocommunity.colorscheme.everforest", enabled = true },
 
@@ -25,14 +25,14 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.astro" },
-  
+
   -- https://github.com/echasnovski/mini.surround
   -- ""みたいな囲みをいい感じにするやつ
   { import = "astrocommunity.motion.mini-surround" },
 
   -- https://github.com/wakatime/vim-wakatime
   -- 移動したときにインデントの範囲を表示してくれるやつ
-  { import = "astrocommunity.media.vim-wakatime" },
+  -- { import = "astrocommunity.media.vim-wakatime" },
 
   -- https://github.com/echasnovski/mini.animate
   -- 移動したときにインデントの範囲を表示してくれるやつ
@@ -45,10 +45,10 @@ return {
     "m4xshen/smartcolumn.nvim",
     opts = {
       colorcolumn = "80",
-      disabled_filetypes = { "help"},
+      disabled_filetypes = { "help" },
       custom_colorcolumn = {},
       scope = "file",
-    }
+    },
   },
 
   -- github copilot
