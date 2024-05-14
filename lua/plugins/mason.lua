@@ -25,8 +25,6 @@ return {
         "marksman",
         -- rust
         "rust_analyzer",
-        -- ruby
-        "ruby_ls",
       })
     end,
   },

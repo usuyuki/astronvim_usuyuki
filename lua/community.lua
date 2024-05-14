@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
@@ -52,20 +52,20 @@ return {
   },
 
   -- github copilot
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
-  -- { -- further customize the options set by the community
-  --   "copilot.lua",
-  --   opts = {
-  --     suggestion = {
-  --       keymap = {
-  --         accept = "<C-l>",
-  --         accept_word = false,
-  --         accept_line = false,
-  --         next = "<C-.>",
-  --         prev = "<C-,>",
-  --         dismiss = "<C/>",
-  --       },
-  --     },
-  --   },
-  -- },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { -- further customize the options set by the community
+    "copilot.lua",
+    opts = {
+      suggestion = {
+        keymap = {
+          accept = "<C-l>",
+          accept_word = false,
+          accept_line = false,
+          next = "<C-.>",
+          prev = "<C-,>",
+          dismiss = "<C/>",
+        },
+      },
+    },
+  },
 }
