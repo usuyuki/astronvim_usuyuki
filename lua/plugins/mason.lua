@@ -48,6 +48,8 @@ return {
         -- tex
         "vale",
         "latexindent",
+        -- ts
+        "biome",
       })
     end,
   },

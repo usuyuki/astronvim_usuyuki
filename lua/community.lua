@@ -25,6 +25,7 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.astro" },
+  { import = "astrocommunity.pack.typescript" },
 
   -- https://github.com/echasnovski/mini.surround
   -- ""みたいな囲みをいい感じにするやつ
