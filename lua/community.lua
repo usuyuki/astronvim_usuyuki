@@ -9,7 +9,7 @@ return {
   "AstroNvim/astrocommunity",
 
   -- カラースキーマ
-  { import = "astrocommunity.colorscheme.everforest", enabled = true },
+  { import = "astrocommunity.colorscheme.everforest" },
 
   -- language
   { import = "astrocommunity.pack.lua" },
