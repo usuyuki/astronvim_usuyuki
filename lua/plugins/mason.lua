@@ -25,6 +25,8 @@ return {
         "marksman",
         -- rust
         "rust_analyzer",
+        -- protobuf
+        "buf_ls",
       },
     },
   },
@@ -39,7 +41,7 @@ return {
         "php-cs-fixer",
         "phpstan",
         -- go
-        "staticcheck",
+        "golangci-lint",
         -- c
         "cpplint",
         "clang-format",
