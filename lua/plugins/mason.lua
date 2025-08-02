@@ -27,6 +27,8 @@ return {
         "rust_analyzer",
         -- protobuf
         "buf_ls",
+        -- ts
+        "biome",
       },
     },
   },
