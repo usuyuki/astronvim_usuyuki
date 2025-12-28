@@ -15,5 +15,11 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- 日本語の括弧などを % で移動できるようにする
+-- (クォーテーション類は matchpairs に追加できないため除外しています)
+vim.opt.matchpairs:append({
+  "<:>", "「:」", "（:）", "『:』", "【:】", "《:》", "〈:〉", "｛:｝", "［:］"
+})
+
 require "lazy_setup"
 require "polish"
