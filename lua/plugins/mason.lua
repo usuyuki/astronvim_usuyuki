@@ -33,28 +33,10 @@ return {
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
+  -- none-ls.nvim is incompatible with Neovim 0.12+ (lsp._request_name_to_capability removed)
   {
     "jay-babu/mason-null-ls.nvim",
-    -- overrides `require("mason-null-ls").setup(...)`
-    opts = {
-      ensure_installed = {
-        "prettier",
-        -- php
-        "php-cs-fixer",
-        "phpstan",
-        -- go
-        "golangci-lint",
-        -- c
-        "cpplint",
-        "clang-format",
-        -- tex
-        "vale",
-        "latexindent",
-        -- ts
-        "biome",
-        -- add more arguments for adding more null-ls sources
-      },
-    },
+    enabled = false,
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
